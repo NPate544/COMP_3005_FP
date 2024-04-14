@@ -38,7 +38,7 @@ def set_trainer_availability(conn, trainer_id):
     start_time = input("Enter the start time (HH:MM): ")
     end_time = input("Enter the end time (HH:MM): ")
     
-    # Assuming there is a 'trainer_availability' table with columns 'trainer_id', 'available_date', 'start_time', and 'end_time'
+
     query = """
     INSERT INTO TrainerAvailability (trainer_id, available_date, start_time, end_time)
     VALUES (%s, %s, %s, %s)

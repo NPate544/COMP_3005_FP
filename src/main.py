@@ -11,8 +11,7 @@ def main():
             role, member_id, trainer_id, staff_id = login()
             if role:
                 user_menu(role, member_id, trainer_id, staff_id)
-                # The user_menu should handle the option to exit within each role's menu,
-                # so there's no need to ask if the user wants to exit right after returning from the menu.
+
             else:
                 print("Exiting...")
                 break  # Exit if login is not successful
